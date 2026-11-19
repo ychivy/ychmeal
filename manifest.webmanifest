@@ -1,6 +1,6 @@
 {
   "name": "友誠餐費系統",
-  "short_name": "友誠餐費",
+  "short_name": "友誠餐費系統",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#FFFCF6",

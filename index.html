@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>友誠餐費</title>
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="友誠餐費">
+<meta name="theme-color" content="#FFFCF6">
+<style>
+  html,body{margin:0;height:100%;background:#FFFCF6}
+  iframe{position:fixed;inset:0;width:100%;height:100%;border:0}
+</style>
+</head>
+<body>
+<iframe id="app" allow="clipboard-write" title="友誠餐費系統"></iframe>
+<script>
+  // ↓↓↓ 把下面引號內的網址換成你的 Apps Script「網頁應用程式」/exec 網址 ↓↓↓
+  var EXEC_URL = "請貼上你的_exec_網址";
+  // ↑↑↑ 只需要改這一行 ↑↑↑
+  var q = new URLSearchParams(location.search).get('page') === 'fee' ? '?page=fee' : '';
+  document.getElementById('app').src = EXEC_URL + q;
+</script>
+</body>
+</html>

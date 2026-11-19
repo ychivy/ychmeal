@@ -20,7 +20,7 @@
 <iframe id="app" allow="clipboard-write" title="友誠餐費系統"></iframe>
 <script>
   // ↓↓↓ 把下面引號內的網址換成你的 Apps Script「網頁應用程式」/exec 網址 ↓↓↓
-  var EXEC_URL = "請貼上你的_exec_網址";
+  var EXEC_URL = "https://script.google.com/macros/s/AKfycbzzBUaWFR8UVt45E-v8YZ6bJlrLnyPjUsGHzoox-17MtxpxrPVM0bXalAeoCefhmwc3zg/exec";
   // ↑↑↑ 只需要改這一行 ↑↑↑
   var q = new URLSearchParams(location.search).get('page') === 'fee' ? '?page=fee' : '';
   document.getElementById('app').src = EXEC_URL + q;
